@@ -13,9 +13,9 @@ SLACK_WEBHOOK_URL="https://hooks.slack.com/services/T04D0EKES7J/B092TRQ97GA/KHqX
 
 MESSAGE="🚀 Code pushed to GitHub at $(date)"
 
-response=$(curl -X POST -H 'Content-type: application/json' \
+curl -X POST -H 'Content-type: application/json' \
 --data "{\"text\":\"$MESSAGE\"}" \
-"$SLACK_WEBHOOK_URL")
+"$SLACK_WEBHOOK_URL"
 
 #if [[ "$response" != "ok" ]]; then
  #curl -S -X POST -H 'Content-type: application/json' \
