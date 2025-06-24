@@ -9,7 +9,7 @@ git commit -m "automated update $(date) "
 git push origin main
 
 # This will be triggered by GitHub via POST request
-SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
+SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
 
 MESSAGE="🚀 Code pushed to GitHub at $(date)"
 
